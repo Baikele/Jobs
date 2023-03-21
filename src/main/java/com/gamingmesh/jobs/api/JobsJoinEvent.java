@@ -1,14 +1,14 @@
 package com.gamingmesh.jobs.api;
 
-import org.bukkit.event.Cancellable;
 
 import com.gamingmesh.jobs.container.Job;
 import com.gamingmesh.jobs.container.JobsPlayer;
+import org.bukkit.event.Cancellable;
 
 public final class JobsJoinEvent extends BaseEvent implements Cancellable {
 
-	private JobsPlayer player;
-	private Job job;
+	private final JobsPlayer player;
+	private final Job job;
 	private boolean cancelled = false;
 
 	public JobsJoinEvent(JobsPlayer jPlayer, Job job) {

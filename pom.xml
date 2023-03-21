@@ -223,7 +223,7 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/libs/eventbus-4.0.0.jar</systemPath>
 		</dependency>
-		<!-- libs -->
+
 		<dependency>
 			<groupId>2</groupId>
 			<artifactId>2</artifactId>
@@ -231,13 +231,27 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/libs/forge-1.16.5-36.2.39-server.jar</systemPath>
 		</dependency>
-		<!-- libs -->
+<!--		&lt;!&ndash; libs &ndash;&gt;-->
 		<dependency>
 			<groupId>3</groupId>
 			<artifactId>3</artifactId>
 			<version>latest</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/libs/forge-1.16.5-36.2.39-universal.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>4</groupId>
+			<artifactId>4</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/forgespi-3.2.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>5</groupId>
+			<artifactId>5</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/server-1.16.5-20210115.111550-srg.jar</systemPath>
 		</dependency>
 		<!-- WildStacker -->
 		<dependency>
@@ -319,14 +333,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin> 
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.3.1</version>
-				<configuration>
-					 <outputDirectory>D:\MC\Server 1.19\plugins\</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
