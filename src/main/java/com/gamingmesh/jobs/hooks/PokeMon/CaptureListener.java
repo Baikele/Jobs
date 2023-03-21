@@ -50,8 +50,7 @@ public class CaptureListener implements Listener {
             if (!payForItemDurabilityLoss(player))
                 return;
 
-            Jobs.action(Jobs.getPlayerManager().getJobsPlayer(player),
-                    new CapPokeInfo(cesc.getPokemon().getSpecies().getLocalizedName(), ActionType.CAPPOKE));
+            Jobs.action(Jobs.getPlayerManager().getJobsPlayer(player), new CapPokeInfo(cesc.getPokemon().getPokemon().getLocalizedName(), ActionType.CAPPOKE));
         }
 
     }

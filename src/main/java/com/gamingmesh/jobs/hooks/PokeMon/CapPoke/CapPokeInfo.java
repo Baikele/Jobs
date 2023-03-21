@@ -2,22 +2,23 @@ package com.gamingmesh.jobs.hooks.PokeMon.CapPoke;
 
 import com.gamingmesh.jobs.container.ActionType;
 import com.gamingmesh.jobs.container.BaseActionInfo;
+import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 
 public class CapPokeInfo extends BaseActionInfo {
-    private String name;
+    private String pokemon;
 
-    public CapPokeInfo(String name, ActionType type) {
+    public CapPokeInfo(String pokemon, ActionType type) {
         super(type);
-        this.name = name;
+        this.pokemon = pokemon;
     }
 
     @Override
     public String getName() {
-        return name;
+        return pokemon;
     }
 
     @Override
     public String getNameWithSub() {
-        return name;
+        return pokemon;
     }
 }

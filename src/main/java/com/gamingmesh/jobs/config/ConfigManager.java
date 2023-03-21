@@ -28,6 +28,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
+import com.pixelmonmod.api.pokemon.PokemonSpecificationProxy;
+import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
+import com.pixelmonmod.pixelmon.api.pokemon.PokemonFactory;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -822,7 +825,9 @@ public class ConfigManager {
             if (split.length > 1) {
                 subType = split[1];
             }
-        } else if (actionType == ActionType.SHEAR && !myKey.startsWith("color")) {
+        }else if(actionType == ActionType.CAPPOKE){
+            type = myKey;
+        }else if (actionType == ActionType.SHEAR && !myKey.startsWith("color")) {
             type = myKey;
         }
 

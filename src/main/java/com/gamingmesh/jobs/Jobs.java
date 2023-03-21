@@ -32,6 +32,7 @@ import java.util.UUID;
 import java.util.WeakHashMap;
 import java.util.logging.Logger;
 
+import com.gamingmesh.jobs.hooks.PokeMon.CaptureListener;
 import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
@@ -794,6 +795,7 @@ public final class Jobs extends JavaPlugin {
 
         pm.registerEvents(new JobsListener(getInstance()), getInstance());
         pm.registerEvents(new JobsPaymentListener(getInstance()), getInstance());
+        pm.registerEvents(new CaptureListener(), getInstance());
         if (Version.isCurrentEqualOrHigher(Version.v1_14_R1)) {
             pm.registerEvents(new JobsPayment14Listener(), getInstance());
         }
