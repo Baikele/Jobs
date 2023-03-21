@@ -57,6 +57,7 @@ public class NameTranslatorManager {
             case REPAIR:
             case BREW:
             case FISH:
+            case CAPPOKE:
             case STRIPLOGS:
                 String matName = materialName;
                 materialName = materialName.replace(" ", "");

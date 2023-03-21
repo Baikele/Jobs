@@ -610,6 +610,7 @@ public class ConfigManager {
         case PLACE:
         case EAT:
         case FISH:
+        case CAPPOKE:
         case ENCHANT:
         case DYE:
         case CRAFT:

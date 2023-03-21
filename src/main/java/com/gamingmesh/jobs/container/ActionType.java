@@ -41,7 +41,9 @@ public enum ActionType {
     EAT("Eat"),
     CUSTOMKILL("custom-kill"),
     COLLECT("Collect"),
-    BAKE("Bake");
+    BAKE("Bake"),
+    CAPPOKE("CapPoke")
+    ;
 
     private String name;
 

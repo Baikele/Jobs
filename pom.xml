@@ -19,7 +19,7 @@
 			<artifactId>paper-api</artifactId>
 			<version>1.17.1-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
-			<exclusions> 
+			<exclusions>
 				<exclusion>
 					<groupId>org.ow2.asm</groupId>
 					<artifactId>asm-commons</artifactId>
@@ -198,6 +198,46 @@
 			<version>latest</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/libs/CMILib1.2.4.5.jar</systemPath>
+		</dependency>
+		<!-- Pixelmon -->
+		<dependency>
+			<groupId>pixelmon</groupId>
+			<artifactId>pixelmon</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/Pixelmon-1.16.5-9.1.3-server.jar</systemPath>
+		</dependency>
+		<!-- Aycore -->
+		<dependency>
+			<groupId>aycore</groupId>
+			<artifactId>aycore</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/AyCore-9.0.4-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<!-- libs -->
+		<dependency>
+			<groupId>1</groupId>
+			<artifactId>1</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/eventbus-4.0.0.jar</systemPath>
+		</dependency>
+		<!-- libs -->
+		<dependency>
+			<groupId>2</groupId>
+			<artifactId>2</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/forge-1.16.5-36.2.39-server.jar</systemPath>
+		</dependency>
+		<!-- libs -->
+		<dependency>
+			<groupId>3</groupId>
+			<artifactId>3</artifactId>
+			<version>latest</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/forge-1.16.5-36.2.39-universal.jar</systemPath>
 		</dependency>
 		<!-- WildStacker -->
 		<dependency>
